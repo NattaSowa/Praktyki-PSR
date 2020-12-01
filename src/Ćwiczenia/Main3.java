@@ -4,7 +4,7 @@ public class Main3 {
 
     public static void main(String[] args) {
 
-        //Zadanie2: zsumować liczby w tablicy 10 elementów
+        //Zadanie2: zsumuj liczby w tablicy - 10 elementów
 
         //tablica liczb - 10 elementów
         int[] Liczby = {4,2,5,76,8,2,234,346,32,1};
