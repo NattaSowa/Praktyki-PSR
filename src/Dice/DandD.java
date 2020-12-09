@@ -1,27 +1,17 @@
 package Dice;
 
 import java.security.SecureRandom;
-import java.util.Random;
 
 public class DandD {
-    private int amountOfFaces;
+    private int n;
+    SecureRandom random;
 
-    public DandD(int amountOfFaces) {
-        this.amountOfFaces = amountOfFaces;
+    public DandD(int n){
+        this.n = n;
+        random = new SecureRandom();
     }
 
-    // Zwraca minimalną liczbę możliwą do wylosowania (zawsze 1)
-    public int getMinNumber() {
-        return 1;
-    }
-
-    // Zawraca liczbę ścianek (i jednocześnie maksymalną liczbę możliwą do wylosowania)
-    public int getAmountOfFaces() {
-        return amountOfFaces;
-    }
-
-    // Rzut kością
-    public int draw() {
-        return new SecureRandom().nextInt(amountOfFaces + 1);
+    public int roll() {
+        return this.random.nextInt(n) + 1;
     }
 }
